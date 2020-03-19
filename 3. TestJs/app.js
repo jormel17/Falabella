@@ -10,7 +10,7 @@ function  Producto (a,b){
     var c = 20;
     return a*b*c;
 }
-    Producto(2,5);
+    Producto(1,5);
 console.log(Producto(2,5));  //el resultado es 200
 
 //Test3//
@@ -20,7 +20,6 @@ var Persona = {
     telefono: "900199703",
     email: "juan.perez@gmail.com"
     }
-function ObjPersona(){return Persona;}
+function ObjPersona(){return Persona.nombre + ', ' + Persona.apellido + ', ' + Persona.telefono + ', ' + Persona.email;} 
 
-console.log(ObjPersona().nombre, ObjPersona().apellido, ObjPersona().telefono, ObjPersona().email);
-
+console.log(ObjPersona());
